@@ -8,10 +8,125 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
+  <body class="page__body index-body">
+
+    <header class="header">
+      <nav class="header__main-nav main-nav">
+        <a class="main-nav__logo logo-link" href="#" >
+          <picture></picture>
+          <span class="main-nav__logo-text">
+            Интернет-магазин кофейных напитков
+          </span>
+        </a>
+        <ul class="site-nav">
+          <li class="nav-links__item">
+            <a class="nav-link__link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="nav-links__item">
+            <a class="nav-link__link" href="#">
+              Каталог
+            </a>
+          </li>
+          <li class="nav-links__item">
+            <a class="nav-link__link" href="#">
+              Доставка
+            </a>
+          </li>
+          <li class="nav-links__item">
+            <a class="nav-link__link" href="#">
+              О нас
+            </a>
+          </li>
+        </ul>
+        <ul class="user-nav">
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="">
+              <span class="user-nav__link-text">Войти</span>
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="">
+              <span class="user-nav__link-text">Корзина</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="index-body__main main-index">
+      <h1 class="visually-hidden">Интернет-магазин кофейных напитков Drink2Go</h1>
+
+      <section class="hero">
+        <div class="hero__slider-wrapper">
+          <h2 class="visually-hidden">Новинки магазина</h2>
+          <ul class="hero-slider">
+            <li class="hero-slider__item">
+              <picture>
+                <img class="hero-slider__img" src="#" alt="банка с напитком>">
+              </picture>
+              <div class="description-wrapper">
+                <span>Новинка!</span>
+                <h3 class="product-title">Декаф Флэт Уайт</h3>
+                <p class="product-discription">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                <div class="description-wrapper__price-container">
+                  <span class="hero-slider__old-price">295₽</span>
+                  <span class="current-price">225₽</span>
+                  <a class="hero-slider__btn primary-btn" href="#">Заказать</a>
+                </div>
+              </div>
+            </li>
+            <li class="hero-slider__item">
+              <picture>
+                <img class="hero-slider__img" src="#" alt="банка с напитком>">
+              </picture>
+              <div class="description-wrapper">
+                <span>Новинка!</span>
+                <h3 class="product-title">Лавандовый Латте</h3>
+                <p class="product-discription">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                <div class="description-wrapper__price-container">
+                  <span class="hero-slider__old-price">285₽</span>
+                  <span class="current-price">265₽</span>
+                  <a class="hero-slider__btn primary-btn" href="#">Заказать</a>
+                </div>
+              </div>
+            </li>
+            <li class="hero-slider__item">
+              <picture>
+                <img class="hero-slider__img" src="#" alt="банка с напитком>">
+              </picture>
+              <div class="description-wrapper">
+                <span>Новинка!</span>
+                <h3 class="product-title">Тройной Эспрессо</h3>
+                <p class="product-discription">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                <div class="description-wrapper__price-container">
+                  <span class="hero-slider__old-price">395₽</span>
+                  <span class="current-price">375₽</span>
+                  <a class="hero-slider__btn primary-btn" href="#">Заказать</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="slider-pagination">
+            <li class="slider-pagination__item">\
+              <a class="slider-pagination__btn" href=""></a>
+            </li>
+            <li class="slider-pagination__item">\
+              <a class="slider-pagination__btn" href=""></a>
+            </li>
+            <li class="slider-pagination__item">\
+              <a class="slider-pagination__btn" href=""></a>
+            </li>
+          </ul>
+          <button class="slider-btn slider-btn--previos">
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="slider-btn slider-btn--next">
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+      </section>
     </main>
   </body>
 </html>
