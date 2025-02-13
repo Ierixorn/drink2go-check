@@ -18,28 +18,31 @@
           </picture>
           <span>Интернет-магазин кофейных напитков</span>
         </a>
-        <ul class="site-nav">
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#">
-              Каталог
-            </a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#">
-              Доставка
-            </a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#">
-              О нас
-            </a>
-          </li>
-        </ul>
+        <button class="main-nav__menu-button" type="button" aria-label="Открыть меню."></button>
+        <div class="main-nav__inner-wrapper">
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">
+                Каталог
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">
+                Доставка
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">
+                О нас
+              </a>
+            </li>
+          </ul>
+        </div>
         <ul class="user-nav">
           <li class="user-nav__item">
             <a class="user-nav__link" href="">
@@ -56,11 +59,11 @@
     </header>
 
     <main class="index-body__main main-index">
-      <h1 class="visually-hidden">Интернет-магазин кофейных напитков Drink2Go</h1>
+      <h1 class="visually-hidden">Интернет-магазин кофейных напитков Drink2Go.</h1>
 
       <section class="hero-section">
         <div class="hero-section__slider-wrapper">
-          <h2 class="visually-hidden">Новинки магазина</h2>
+          <h2 class="visually-hidden">Новинки магазина.</h2>
           <ul class="hero-slider">
             <li class="hero-slider__item">
               <picture>
@@ -120,10 +123,10 @@
             </li>
           </ul>
           <button class="slider-btn slider-btn--previos">
-            <span class="visually-hidden">Предыдущий</span>
+            <span class="visually-hidden">Предыдущий.</span>
           </button>
           <button class="slider-btn slider-btn--next">
-            <span class="visually-hidden">Следующий</span>
+            <span class="visually-hidden">Следующий.</span>
           </button>
         </div>
       </section>
@@ -362,6 +365,7 @@
       </section>
 
     </main>
+
     <footer class="index-body__main-footer main-footer">
       <h2 class="visually-hidden">Контакты и полезная информация.</h2>
       <div class="main-footer__header-wrapper">
@@ -373,13 +377,13 @@
         </a>
         <ul class="social-list">
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--vkontakte" href="#"></a>
+            <a class="social-list__link social-list__link--vkontakte" href="#" aria-label="Переход на страницу магазина во Вконтакте."></a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--pinterest" href="#"></a>
+            <a class="social-list__link social-list__link--pinterest" href="#" aria-label="Переход на страницу магазина в Pinterest."></a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--odnoklassniki" href="#"></a>
+            <a class="social-list__link social-list__link--odnoklassniki" href="#" aria-label="Переход на страницу магазина в Однокласниках."></a>
           </li>
         </ul>
       </div>
@@ -429,5 +433,6 @@
       </ul>
       <a class="developer-link" href="#">Разработано в HTML Academy</a>
     </footer>
+
   </body>
 </html>
