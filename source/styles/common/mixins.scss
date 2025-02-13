@@ -1,0 +1,49 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+    src: $font-src;
+  }
+}
+
+@mixin text-format ($font-family, $font-size, $line-heigh, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-heigh;
+  color: $color;
+}
+
+@mixin absolute-center () {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin common-pseudo ($width, $height) {
+  content: " ";
+  display: block;
+  width: $width;
+  height: $height;
+}
+
+@mixin common-wrapper ($mobile, $tablet, $desktop) {
+  width: $mobile;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop;
+  }
+}
+
+@mixin list-normalize () {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

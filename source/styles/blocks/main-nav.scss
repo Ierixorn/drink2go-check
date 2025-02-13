@@ -1,0 +1,32 @@
+.main-nav__menu-button {
+  position: relative;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: $primary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__menu-button::after {
+  @include absolute-center;
+  content: "";
+  width: 16px;
+  height: 16px;
+  mask-image: url("../../icons/stack.svg#menu-burger");
+  mask-size: contain;
+  background-color: $fourth-bg-color;
+}
+
+.main-nav__menu-button::before {
+  @include absolute-center;
+  display: none;
+  content: "";
+  width: 16px;
+  height: 16px;
+  mask-image: url("../../icons/stack.svg#menu-cross");
+  mask-size: contain;
+  background-color: $fourth-bg-color;
+}
