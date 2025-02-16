@@ -1,0 +1,69 @@
+.user-link {
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: $third-bg-color;
+  }
+}
+
+.user-link--user::before {
+  @include absolute-center;
+  content: "";
+  width: 16px;
+  height: 16px;
+  mask-image: url("../../icons/stack.svg#user-icon");
+  mask-size: contain;
+  background-color: $fourth-bg-color;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: unset;
+    margin-right: 10px;
+  }
+}
+
+.user-link--basket::before {
+  @include absolute-center;
+  content: "";
+  width: 16px;
+  height: 16px;
+  mask-image: url("../../icons/stack.svg#basket-icon");
+  mask-size: contain;
+  background-color: $fourth-bg-color;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: unset;
+    margin-right: 10px;
+  }
+}
+
+.user-link--user:hover:before,
+.user-link--basket:hover:before {
+  @media (min-width: $desktop-width) {
+    background-color: $second-bg-color;
+  }
+}
+
+.user-link span {
+  display: none;
+
+  &:hover {
+    color: $second-text-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+}
+
+

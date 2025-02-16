@@ -1,0 +1,30 @@
+.user-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-nav__item {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+  }
+}
+
+.user-nav__link {
+  position: relative;
+  padding: 20px 30px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 20px 20px;
+  }
+}

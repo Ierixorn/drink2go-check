@@ -1,68 +1,63 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
   <head>
     <meta charset="UTF-8">
     <title>Интернет-магазин кофейных напитков Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
   </head>
+
   <body class="page__body index-body">
 
     <header class="index-body__main-header main-header">
-      <nav class="main-header__main-nav main-nav">
+      <nav class="main-header__main-nav main-nav main-nav--closed">
         <a class="main-nav__logo logo-link" href="#" >
           <picture>
             <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="170" height="36" type="image/svg+xml">
             <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="82" height="36" type="image/svg+xml">
             <img class="main-nav__logo-image" src="images/logo-mobile.svg" width="32" height="36" alt="Логотип магазина Drink2Go">
           </picture>
-          <span>Интернет-магазин кофейных напитков</span>
+          <span>Интернет-магазин<br> кофейных напитков</span>
         </a>
-        <button class="main-nav__menu-button" type="button" aria-label="Открыть меню."></button>
         <div class="main-nav__inner-wrapper">
-          <ul class="site-nav">
+          <ul class="main-nav__site-list site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">
-                Главная
-              </a>
+              <a class="site-nav__link site-link current-link" href="#">Главная</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">
-                Каталог
-              </a>
+              <a class="site-nav__link site-link" href="#">Каталог</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">
-                Доставка
-              </a>
+              <a class="site-nav__link site-link" href="#">Доставка</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">
+              <a class="site-nav__link site-link" href="#">
                 О нас
               </a>
             </li>
           </ul>
         </div>
-        <ul class="user-nav">
+        <ul class="main-nav__user-list user-nav">
           <li class="user-nav__item">
-            <a class="user-nav__link" href="#">
+            <a class="user-nav__link user-link user-link--user" href="#">
               <span class="user-nav__link-text">Войти</span>
             </a>
           </li>
           <li class="user-nav__item">
-            <a class="user-nav__link" href="#">
+            <a class="user-nav__link user-link user-link--basket" href="#">
               <span class="user-nav__link-text">Корзина</span>
             </a>
           </li>
         </ul>
+        <button class="main-nav__menu-btn" type="button" aria-label="Открыть меню."></button>
       </nav>
     </header>
 
     <main class="index-body__main main-index">
       <h1 class="visually-hidden">Интернет-магазин кофейных напитков Drink2Go.</h1>
-
+<!--
       <section class="hero-section">
         <div class="main-index__hero-wrapper">
           <h2 class="visually-hidden">Новинки магазина.</h2>
@@ -131,9 +126,9 @@
             <span class="visually-hidden">Следующий.</span>
           </button>
         </div>
-      </section>
+      </section> -->
 
-      <section class="advantages-section">
+      <!-- <section class="advantages-section">
         <div class="main-index__advantages-section-wrapper">
           <span class="sub-title">Преимущества</span>
           <h2 class="section-title">Главные причины выбрать Drink2Go</h2>
@@ -370,12 +365,12 @@
             <img class="map-section__map-img" src="#" alt="Расположение магазина на карте">
           </picture>
         </div>
-      </section>
+      </section> -->
 
     </main>
 
     <footer class="index-body__main-footer main-footer">
-      <div class="index-body__main-footer-wrapper">
+      <!-- <div class="index-body__main-footer-wrapper">
         <h2 class="visually-hidden">Контакты и полезная информация.</h2>
         <div class="main-footer__header-wrapper">
           <a class="main-footer__logo" href="#" >
@@ -441,8 +436,10 @@
           </li>
         </ul>
         <a class="developer-link" href="#">Разработано в HTML Academy</a>
-      </div>
+      </div> -->
     </footer>
 
+    <script src="scripts/index.js" type="module" defer></script>
+    <script src="scripts/mobile-menu.js" type="module"></script>
   </body>
 </html>
