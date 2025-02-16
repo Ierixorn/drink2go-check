@@ -1,0 +1,129 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-nav__logo {
+  margin-right: 88px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 162px;
+  }
+}
+
+.main-nav__logo-image {
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
+
+}
+
+.main-nav__logo span {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 140%;
+  }
+}
+
+.main-nav--opened {
+  background-color: $primary-bg-color;
+}
+
+.main-nav__inner-wrapper {
+  width: 320px;
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $primary-bg-color;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-right: 60px;
+    position: static;
+    width: unset;
+    transform: none;
+    z-index: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 162px;
+  }
+}
+
+.main-nav--closed .main-nav__inner-wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-nav--opened .main-nav__inner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.main-nav__site-list {
+  @include list-normalize();
+}
+
+.main-nav__user-list {
+  @include list-normalize();
+  margin-right: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.main-nav__menu-btn {
+  position: relative;
+  padding: 20px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: $primary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__menu-btn::after {
+  @include absolute-center;
+  content: "";
+  width: 16px;
+  height: 16px;
+  mask-image: url("../../icons/stack.svg#menu-burger");
+  mask-size: contain;
+  background-color: $fourth-bg-color;
+}
+
+.main-nav__menu-btn::before {
+  @include absolute-center;
+  display: none;
+  content: "";
+  width: 16px;
+  height: 16px;
+  mask-image: url("../../icons/stack.svg#menu-cross");
+  mask-size: contain;
+  background-color: $fourth-bg-color;
+}
+
+.main-nav--opened .main-nav__menu-btn::before {
+  display: inline-block;
+}
+
+.main-nav--opened .main-nav__menu-btn::after {
+  display: none;
+}

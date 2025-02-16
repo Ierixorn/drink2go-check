@@ -1,0 +1,27 @@
+.index-body {
+  @include text-format ($primary-font, 14px, 143%, $primary-text-color);
+  position: relative;
+  background-color: $primary-bg-color;
+}
+
+.index-body__main-header {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.index-body__main {
+  flex-grow: 1;
+}
+
+.index-body__main-footer-wrapper {
+  @include common-wrapper (320px, 768px, 1440px);
+}

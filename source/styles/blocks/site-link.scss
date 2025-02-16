@@ -1,0 +1,18 @@
+.site-link {
+  @include text-format ($primary-font, 12px, 133%, $primary-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $second-text-color;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $third-bg-color;
+  }
+}
+
+

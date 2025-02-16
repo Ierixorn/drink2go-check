@@ -1,0 +1,51 @@
+// .main-index__hero {
+//   margin-bottom: 20px;
+
+//   @media (min-width: $tablet-width) {
+//     margin-bottom: 0;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     margin-bottom: 82px;
+//   }
+// }
+
+// .main-index__product-section {
+//   margin-bottom: 20px;
+
+//   @media (min-width: $tablet-width) {
+//     margin-bottom: 45px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     margin-bottom: 71px;
+//   }
+// }
+
+// .main-index__description-section {
+//   margin-bottom: 49px;
+
+//   @media (min-width: $tablet-width) {
+//     margin-bottom: 45px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     margin-bottom: 69px;
+//   }
+// }
+
+.main-index__hero-wrapper {
+  @include common-wrapper (320px, 768px, 1440px);
+}
+
+.main-index__advantages-section-wrapper {
+  @include common-wrapper (320px, 768px, 1440px);
+}
+
+.main-index__catalog-wrapper {
+  @include common-wrapper (320px, 768px, 1440px);
+}
+
+.main-index__map-wrapper {
+  @include common-wrapper (320px, 768px, 1440px);
+}
