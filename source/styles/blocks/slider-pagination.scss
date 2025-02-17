@@ -1,0 +1,33 @@
+.slider-pagination {
+  @include list-normalize();
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -1px;
+    margin-left: -25px;
+  }
+}
+
+.slider-pagination__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.slider-pagination__btn {
+  text-decoration: none;
+  outline: none;
+}
+
+.slider-pagination__btn {
+  display: inline-block;
+  width: 62px;
+  height: 4px;
+  background-color: $primary-bg-color;
+}
+
+.slider-pagination__btn[aria-current="true"] {
+  background-color: $second-bg-color;
+}

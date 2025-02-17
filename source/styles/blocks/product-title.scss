@@ -1,0 +1,17 @@
+.product-title {
+  @include text-format ($primary-font, 36px, 133%, $primary-text-color);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 143%;
+  }
+}
+
+.product-title br{
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

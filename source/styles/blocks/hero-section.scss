@@ -1,0 +1,22 @@
+.hero-section {
+  background-color: $five-bg-color;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(180deg, rgba(243,235,225,1) 75.5%, rgba(255,255,255,1) 74%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: $five-bg-color;
+  }
+
+}
+
+.hero-section__wrapper{
+  @include common-wrapper (320px, 768px, 1440px);
+}
+
+.hero-section__card-slider {
+  @media (min-width: $desktop-width) {
+    width: 1255px;
+  }
+}
