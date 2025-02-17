@@ -1,0 +1,17 @@
+.primary-btn {
+  @include text-format ($primary-font, 16px, 150%, $third-text-color);
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: $second-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $six-bg-color;
+  }
+
+  &:active {
+    background-color: $seven-bg-color;
+  }
+}

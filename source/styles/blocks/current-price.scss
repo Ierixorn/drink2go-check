@@ -1,0 +1,4 @@
+.current-price {
+  @include text-format ($primary-font, 20px, 160%, $primary-text-color);
+  font-weight: 600;
+}

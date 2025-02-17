@@ -1,0 +1,4 @@
+.hero-old-price {
+  @include text-format ($primary-font, 16px, 200%, $second-text-color);
+  text-decoration: line-through;
+}

@@ -1,0 +1,30 @@
+.description-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+  }
+}
+
+.description-wrapper > span {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 133%;
+  text-transform: uppercase;
+  color: $second-text-color;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+}
+
+.description-wrapper__price-container {
+  width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}

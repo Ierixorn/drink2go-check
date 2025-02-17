@@ -1,0 +1,26 @@
+.product-discription {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 160%;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.product-discription br:first-child{
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.product-discription br:not(:first-child){
+    display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}

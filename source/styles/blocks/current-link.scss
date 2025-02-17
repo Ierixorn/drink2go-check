@@ -6,7 +6,7 @@
 }
 
 .current-link::after {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     @include absolute-center();
     content: "";
     display: inline-block;
